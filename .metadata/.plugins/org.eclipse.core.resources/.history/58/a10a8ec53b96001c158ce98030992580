@@ -1,0 +1,13 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../mbed-os/platform/source/minimal-printf/mbed_printf_armlink_overrides.o \
+../mbed-os/platform/source/minimal-printf/mbed_printf_implementation.o \
+../mbed-os/platform/source/minimal-printf/mbed_printf_wrapper.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+

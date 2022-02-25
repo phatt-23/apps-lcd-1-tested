@@ -1,0 +1,42 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../mbed-os/drivers/source/AnalogIn.o \
+../mbed-os/drivers/source/AnalogOut.o \
+../mbed-os/drivers/source/BufferedSerial.o \
+../mbed-os/drivers/source/BusIn.o \
+../mbed-os/drivers/source/BusInOut.o \
+../mbed-os/drivers/source/BusOut.o \
+../mbed-os/drivers/source/CAN.o \
+../mbed-os/drivers/source/DigitalIn.o \
+../mbed-os/drivers/source/DigitalInOut.o \
+../mbed-os/drivers/source/DigitalOut.o \
+../mbed-os/drivers/source/FlashIAP.o \
+../mbed-os/drivers/source/I2C.o \
+../mbed-os/drivers/source/I2CSlave.o \
+../mbed-os/drivers/source/InterruptIn.o \
+../mbed-os/drivers/source/MbedCRC.o \
+../mbed-os/drivers/source/OSPI.o \
+../mbed-os/drivers/source/PortIn.o \
+../mbed-os/drivers/source/PortInOut.o \
+../mbed-os/drivers/source/PortOut.o \
+../mbed-os/drivers/source/PwmOut.o \
+../mbed-os/drivers/source/QSPI.o \
+../mbed-os/drivers/source/ResetReason.o \
+../mbed-os/drivers/source/SPI.o \
+../mbed-os/drivers/source/SPISlave.o \
+../mbed-os/drivers/source/SerialBase.o \
+../mbed-os/drivers/source/SerialWireOutput.o \
+../mbed-os/drivers/source/Ticker.o \
+../mbed-os/drivers/source/Timeout.o \
+../mbed-os/drivers/source/Timer.o \
+../mbed-os/drivers/source/TimerEvent.o \
+../mbed-os/drivers/source/UnbufferedSerial.o \
+../mbed-os/drivers/source/Watchdog.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+

@@ -1,0 +1,24 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../mbed-os/hal/source/LowPowerTickerWrapper.o \
+../mbed-os/hal/source/mbed_compat.o \
+../mbed-os/hal/source/mbed_critical_section_api.o \
+../mbed-os/hal/source/mbed_flash_api.o \
+../mbed-os/hal/source/mbed_gpio.o \
+../mbed-os/hal/source/mbed_gpio_irq.o \
+../mbed-os/hal/source/mbed_itm_api.o \
+../mbed-os/hal/source/mbed_lp_ticker_api.o \
+../mbed-os/hal/source/mbed_lp_ticker_wrapper.o \
+../mbed-os/hal/source/mbed_pinmap_common.o \
+../mbed-os/hal/source/mbed_pinmap_default.o \
+../mbed-os/hal/source/mbed_ticker_api.o \
+../mbed-os/hal/source/mbed_us_ticker_api.o \
+../mbed-os/hal/source/static_pinmap.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+

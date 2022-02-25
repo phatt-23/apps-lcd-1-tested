@@ -1,0 +1,63 @@
+// **************************************************************************
+//
+//               Demo program for APPS labs
+//
+// Subject:      Computer Architectures and Parallel systems
+// Author:       Petr Olivka, petr.olivka@vsb.cz, 02/2022
+// Organization: Department of Computer Science, FEECS,
+//               VSB-Technical University of Ostrava, CZ
+//
+// File:         Main program for LEDs
+//
+// **************************************************************************
+
+#include "mbed.h"
+
+// LEDs on K64F-KIT - instances of class DigitalOut
+DigitalOut g_led_PTA1( PTA1 );
+DigitalOut g_led_PTA2( PTA2 );
+
+// Button on K64F-KIT - instance of class DigitalIn
+DigitalIn g_but_PTC9( PTC9 );
+
+void control_from_ticker()
+{
+	static int l_ticks = 0;
+	l_ticks++;
+
+	if ( ( l_ticks % 500 ) == 0 )
+		g_led_PTA1 = !g_led_PTA1;
+}
+
+int main()
+{
+	printf( "LED demo program started...\n" );
+
+#if 0
+	while ( 1 )
+	{
+		int l_delay = 500000;		// 0.5 sec
+
+		g_led_PTA1 = !g_led_PTA1; 	// invert LED_PTA1 state
+
+		if (g_but_PTC9 == 0) 		// button pressed?
+		{
+			l_delay /= 10;		    // speed up blinking
+			g_led_PTA2 = !g_led_PTA2;
+		}
+		else
+			g_led_PTA2 = 0; 		// LED_PTA2 off
+
+		wait_us( l_delay );
+	}
+#else
+	Ticker l_ticker;
+	std::chrono::microseconds l_tout = 1000;
+
+	l_ticker.attach( control_from_ticker, 0.001 );
+	while ( 1 )
+	{
+		// infinite loop
+	}
+#endif
+}

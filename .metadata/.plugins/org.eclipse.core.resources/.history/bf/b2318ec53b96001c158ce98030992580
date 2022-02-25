@@ -1,0 +1,21 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../mbed-os/storage/blockdevice/source/BufferedBlockDevice.o \
+../mbed-os/storage/blockdevice/source/ChainingBlockDevice.o \
+../mbed-os/storage/blockdevice/source/ExhaustibleBlockDevice.o \
+../mbed-os/storage/blockdevice/source/FlashSimBlockDevice.o \
+../mbed-os/storage/blockdevice/source/HeapBlockDevice.o \
+../mbed-os/storage/blockdevice/source/MBRBlockDevice.o \
+../mbed-os/storage/blockdevice/source/ObservingBlockDevice.o \
+../mbed-os/storage/blockdevice/source/ProfilingBlockDevice.o \
+../mbed-os/storage/blockdevice/source/ReadOnlyBlockDevice.o \
+../mbed-os/storage/blockdevice/source/SFDP.o \
+../mbed-os/storage/blockdevice/source/SlicingBlockDevice.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+

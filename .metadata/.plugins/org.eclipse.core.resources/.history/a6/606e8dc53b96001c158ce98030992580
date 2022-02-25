@@ -1,0 +1,11 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../mbed-os/features/frameworks/mbed-greentea-io/mbed_io.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+

@@ -1,0 +1,18 @@
+/usr/local/mcuxpressoide-11.5.0_7232/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.5.0.202107051138/tools/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/softfp/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	8	static
+/poli/home/vyuka/apps/workspace-full.mcu/demo/mbed-os/drivers/include/drivers/DigitalIn.h:97:9:int mbed::DigitalIn::read()	16	static
+/poli/home/vyuka/apps/workspace-full.mcu/demo/mbed-os/drivers/include/drivers/DigitalIn.h:128:5:mbed::DigitalIn::operator int()	16	static
+/poli/home/vyuka/apps/workspace-full.mcu/demo/mbed-os/drivers/include/drivers/DigitalOut.h:84:10:void mbed::DigitalOut::write(int)	16	static
+/poli/home/vyuka/apps/workspace-full.mcu/demo/mbed-os/drivers/include/drivers/DigitalOut.h:122:17:mbed::DigitalOut& mbed::DigitalOut::operator=(int)	16	static
+/poli/home/vyuka/apps/workspace-full.mcu/demo/mbed-os/platform/include/platform/mbed_wait_api.h:132:13:void _wait_us_inline(unsigned int)	32	static
+../demo-i2c.cpp:26:9:uint8_t I2C_writeNS(uint8_t, uint8_t*, uint8_t)	24	static
+../demo-i2c.cpp:39:9:uint8_t I2C_readN(uint8_t, uint8_t*, uint8_t, uint8_t*)	32	static
+../demo-i2c.cpp:88:9:uint8_t pc8574_search()	16	static
+../demo-i2c.cpp:106:6:void pc8574_write(uint8_t)	24	static
+../demo-i2c.cpp:112:6:void pc8574_bar(uint8_t)	24	static
+../demo-i2c.cpp:119:9:uint8_t fm_tune(int)	24	static
+../demo-i2c.cpp:125:9:uint8_t fm_volume(uint8_t)	24	static
+../demo-i2c.cpp:131:14:unsigned int fm_readfreq()	24	static
+../demo-i2c.cpp:145:9:uint8_t fm_readRDS(uint8_t*)	24	static
+../demo-i2c.cpp:151:9:uint8_t fm_readRSQ(uint8_t*)	24	static
+../demo-i2c.cpp:157:6:void fm_clear_rds_info(rds_info*)	16	static
+../demo-i2c.cpp:180:6:void demo_i2c()	152	static

@@ -1,0 +1,17 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+O_SRCS += \
+../mbed-os/rtos/source/ConditionVariable.o \
+../mbed-os/rtos/source/EventFlags.o \
+../mbed-os/rtos/source/Kernel.o \
+../mbed-os/rtos/source/Mutex.o \
+../mbed-os/rtos/source/Semaphore.o \
+../mbed-os/rtos/source/ThisThread.o \
+../mbed-os/rtos/source/Thread.o 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+
