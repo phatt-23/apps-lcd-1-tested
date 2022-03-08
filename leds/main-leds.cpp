@@ -29,18 +29,23 @@ void control_from_ticker()
 
 	l_ticks++;						// milliseconds counter
 
-	int32_t l_periode_2 = 500;			// T/2 = 0.5 sec
+	int32_t l_periode = 500;		// T/2 = 0.5 sec
 
 	if ( g_but_PTC9 == 0 )			// check button
 	{
-		l_periode_2 /= 10;			// increase speed of blinking
+		l_periode /= 10;			// increase speed of blinking
 	}
 
-	if ( l_ticks >= l_periode_2 )	// time to invert LED?
+	if ( l_ticks >= l_periode / 2 )	// time to switch on?
 	{
-		l_ticks = 0;				// start again
+		g_led_PTA1 = 1;				// LED On
+	}
 
-		g_led_PTA1 = !g_led_PTA1;	// invert LED
+	if ( l_ticks >= l_periode )		// end of periode?
+	{
+		l_ticks = 0;				// start periode again
+
+		g_led_PTA1 = 0;				// LED Off
 	}
 }
 
