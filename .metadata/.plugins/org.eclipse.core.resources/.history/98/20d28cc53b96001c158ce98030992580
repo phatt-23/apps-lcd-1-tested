@@ -1,6 +1,0 @@
-/usr/local/mcuxpressoide-11.5.0_7232/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.5.0.202107051138/tools/arm-none-eabi/include/c++/10.3.1/arm-none-eabi/thumb/v7e-m+fp/softfp/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	8	static
-/poli/home/vyuka/apps/workspace-full.mcu/demo/mbed-os/platform/include/platform/mbed_wait_api.h:132:13:void _wait_us_inline(unsigned int)	32	static
-../demo-lcd.cpp:13:6:void lcd_single_colour(uint16_t)	664	static
-../demo-lcd.cpp:28:6:void lcd_rainbow()	720	static
-../demo-lcd.cpp:58:6:void lcd_put_char(int32_t, int32_t, uint8_t, int)	40	static
-../demo-lcd.cpp:88:6:void demo_lcd()	56	static

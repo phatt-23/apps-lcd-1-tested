@@ -27,8 +27,6 @@ void control_from_ticker()
 {
 	static int l_ticks = 0;
 
-	l_ticks++;						// milliseconds counter
-
 	int32_t l_periode = 500;		// T/2 = 0.5 sec
 
 	if ( g_but_PTC9 == 0 )			// check button
@@ -40,6 +38,8 @@ void control_from_ticker()
 	{
 		g_led_PTA1 = 1;				// LED On
 	}
+
+	l_ticks++;						// milliseconds counter
 
 	if ( l_ticks >= l_periode )		// end of periode?
 	{
