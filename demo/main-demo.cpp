@@ -30,9 +30,9 @@ int main()
 	printf( "Demo program started!\r\n" );
 
 	// uncomment selected demo
-	demo_leds();
-	//demo_lcd();
-	//demo_i2c();
+	// demo_leds();
+	// demo_lcd();
+	// demo_i2c();
 
 	// ******************************************************************
 

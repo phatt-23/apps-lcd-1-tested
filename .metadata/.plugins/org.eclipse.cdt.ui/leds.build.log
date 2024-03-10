@@ -1,9 +1,9 @@
-19:08:14 **** Clean-only build of configuration Debug for project leds ****
+20:11:21 **** Clean-only build of configuration Debug for project leds ****
 make -r -j4 mbedclean 
-rm -rf  ./main-leds.o 
-rm -rf  ./main-leds.d 
+rm -rf ./mbed-os/symbols.o  ./main-leds.o 
+rm -rf ./mbed-os/symbols.d ./main-leds.d 
 rm -rf  empty-mbed-os.* linker-script-*.ld
  
 
-19:08:14 Build Finished. 0 errors, 0 warnings. (took 170ms)
+20:11:21 Build Finished. 0 errors, 0 warnings. (took 175ms)
 

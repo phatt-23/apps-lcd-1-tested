@@ -1,0 +1,7 @@
+/usr/local/mcuxpressoide-11.9.0_2144/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.9.0.202307121226/tools/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7e-m+fp/softfp/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	8	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/lcd/mbed-os/drivers/include/drivers/DigitalIn.h:67:5:mbed::DigitalIn::DigitalIn(PinName)	16	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/lcd/mbed-os/drivers/include/drivers/DigitalIn.h:86:5:mbed::DigitalIn::~DigitalIn()	16	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/lcd/mbed-os/drivers/include/drivers/DigitalOut.h:73:5:mbed::DigitalOut::DigitalOut(PinName, int)	24	static
+../main-lcd.cpp:28:5:int main()	32	static
+../main-lcd.cpp:50:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../main-lcd.cpp:50:1:cpp)	8	static

@@ -1,6 +1,30 @@
-19:08:14 **** Clean-only build of configuration Debug for project leds ****
+20:11:21 **** Clean-only build of configuration Debug for project demo ****
 make -r -j4 mbedclean 
-rm -rf  ./main-leds.o 
-rm -rf  ./main-leds.d 
+rm -rf ./mbed-os/symbols.o  ./main-demo.o 
+rm -rf ./mbed-os/symbols.d ./main-demo.d 
+rm -rf  empty-mbed-os.* linker-script-*.ld
+ 
+20:11:21 **** Clean-only build of configuration Debug for project empty-mbed-os ****
+make -r -j4 mbedclean 
+rm -rf ./mbed-os/symbols.o  ./main-empty.o 
+rm -rf ./mbed-os/symbols.d ./main-empty.d 
+rm -rf  empty-mbed-os.* linker-script-*.ld
+ 
+20:11:21 **** Clean-only build of configuration Debug for project i2c ****
+make -r -j4 mbedclean 
+rm -rf ./mbed-os/symbols.o  ./i2c-lib.o ./main-i2c.o ./si4735-lib.o 
+rm -rf ./mbed-os/symbols.d ./i2c-lib.d ./main-i2c.d ./si4735-lib.d 
+rm -rf  empty-mbed-os.* linker-script-*.ld
+ 
+20:11:21 **** Clean-only build of configuration Debug for project lcd ****
+make -r -j4 mbedclean 
+rm -rf ./mbed-os/symbols.o  ./font8x8.o ./lcd_lib.o ./main-lcd.o 
+rm -rf ./mbed-os/symbols.d ./font8x8.d ./lcd_lib.d ./main-lcd.d 
+rm -rf  empty-mbed-os.* linker-script-*.ld
+ 
+20:11:21 **** Clean-only build of configuration Debug for project leds ****
+make -r -j4 mbedclean 
+rm -rf ./mbed-os/symbols.o  ./main-leds.o 
+rm -rf ./mbed-os/symbols.d ./main-leds.d 
 rm -rf  empty-mbed-os.* linker-script-*.ld
  

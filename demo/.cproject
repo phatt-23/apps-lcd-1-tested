@@ -362,8 +362,8 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}&quot;"/>
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.libs.676387191" name="Libraries (-l)" superClass="gnu.cpp.link.option.libs" useByScannerDiscovery="false" valueType="libs">
-									<listOptionValue builtIn="false" value="mbed-os"/>
 									<listOptionValue builtIn="false" value="demo-all"/>
+									<listOptionValue builtIn="false" value="mbed-os"/>
 									<listOptionValue builtIn="false" value="stdc++"/>
 									<listOptionValue builtIn="false" value="supc++"/>
 									<listOptionValue builtIn="false" value="m"/>
@@ -374,12 +374,13 @@
 								<option id="gnu.cpp.link.option.userobjs.550766288" name="Other objects" superClass="gnu.cpp.link.option.userobjs" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.link.option.other.796715803" name="Other options (-Xlinker [option])" superClass="gnu.cpp.link.option.other" useByScannerDiscovery="false" valueType="stringList">
 									<listOptionValue builtIn="false" value="-Map=&quot;${BuildArtifactFileBaseName}.map&quot;"/>
+									<listOptionValue builtIn="false" value="--no-warn-rwx-segment"/>
 									<listOptionValue builtIn="false" value="-print-memory-usage"/>
 									<listOptionValue builtIn="false" value="--gc-sections"/>
 									<listOptionValue builtIn="false" value="--wrap=main"/>
-									<listOptionValue builtIn="false" value="--wrap=_malloc_r"/>
-									<listOptionValue builtIn="false" value="--wrap=_free_r"/>
-									<listOptionValue builtIn="false" value="--wrap=_realloc_r"/>
+									<listOptionValue builtIn="false" value="--wrap=__malloc_r"/>
+									<listOptionValue builtIn="false" value="--wrap=__free_r"/>
+									<listOptionValue builtIn="false" value="--wrap=__realloc_r"/>
 									<listOptionValue builtIn="false" value="--wrap=_memalign_r"/>
 									<listOptionValue builtIn="false" value="--wrap=_calloc_r"/>
 									<listOptionValue builtIn="false" value="--wrap=exit"/>
@@ -1064,4 +1065,5 @@
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="openCmsis"/>
 </cproject>

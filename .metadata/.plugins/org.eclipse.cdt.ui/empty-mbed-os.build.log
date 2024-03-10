@@ -1,9 +1,9 @@
-15:20:35 **** Clean-only build of configuration Debug for project empty-mbed-os ****
+20:11:21 **** Clean-only build of configuration Debug for project empty-mbed-os ****
 make -r -j4 mbedclean 
-rm -rf  ./main-empty.o 
-rm -rf  ./main-empty.d 
+rm -rf ./mbed-os/symbols.o  ./main-empty.o 
+rm -rf ./mbed-os/symbols.d ./main-empty.d 
 rm -rf  empty-mbed-os.* linker-script-*.ld
  
 
-15:20:35 Build Finished. 0 errors, 0 warnings. (took 181ms)
+20:11:21 Build Finished. 0 errors, 0 warnings. (took 180ms)
 

@@ -3,7 +3,7 @@
 //               Demo program for APPS labs
 //
 // Subject:      Computer Architectures and Parallel systems
-// Author:       Petr Olivka, petr.olivka@vsb.cz, 02/2022
+// Author:       Petr Olivka, petr.olivka@vsb.cz, 03/2024
 // Organization: Department of Computer Science, FEECS,
 //               VSB-Technical University of Ostrava, CZ
 //
@@ -27,25 +27,26 @@ void control_from_ticker()
 {
 	static int l_ticks = 0;
 
-	int32_t l_periode = 500;		// T/2 = 0.5 sec
+	int32_t l_periode = 500;		// T = 0.5 sec
 
 	if ( g_but_PTC9 == 0 )			// check button
 	{
 		l_periode /= 10;			// increase speed of blinking
 	}
 
-	if ( l_ticks >= l_periode / 2 )	// time to switch on?
+	if ( l_ticks < l_periode / 2 )	// time to switch on or off?
+	{
+		g_led_PTA1 = 0;				// LED Off
+	}
+	else
 	{
 		g_led_PTA1 = 1;				// LED On
 	}
 
 	l_ticks++;						// milliseconds counter
-
 	if ( l_ticks >= l_periode )		// end of periode?
 	{
 		l_ticks = 0;				// start periode again
-
-		g_led_PTA1 = 0;				// LED Off
 	}
 }
 
@@ -56,9 +57,8 @@ int main()
 #if 1
 	// modern approach with timer (and interrupt)
 	Ticker l_ticker;
-	std::chrono::milliseconds l_tout( 1 );
 
-	l_ticker.attach( control_from_ticker, l_tout );
+	l_ticker.attach( control_from_ticker, 1ms );
 
 	while ( 1 )
 	{ // infinite loop
@@ -69,16 +69,20 @@ int main()
 	// lazy (conservative) approach
 	while ( 1 )
 	{
-		int32_t l_periode_2 = 500000;// T/2 = 0.5 sec
-
-		g_led_PTA1 = !g_led_PTA1; 	// invert LED_PTA1 state
+		int32_t l_periode = 500000;	// T = 500000 us = 0.5 sec
 
 		if (g_but_PTC9 == 0) 		// button pressed?
 		{
-			l_periode_2 /= 10;	    // speed up blinking
+			l_periode /= 10;	    // speed up blinking
 		}
 
-		wait_us( l_periode_2 );
+		g_led_PTA1 = 0;				// LED off
+
+		wait_us( l_periode / 2 );
+
+		g_led_PTA1 = 1;				// LED on
+
+		wait_us( l_periode / 2 );
 	}
 
 #endif

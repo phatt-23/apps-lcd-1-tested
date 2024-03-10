@@ -1,0 +1,6 @@
+"Task Aware Debugger for GDB" version 11.9.0 (202311161535)
+Copyright 2016-2023 NXP
+==================================
+19:12:57.258 INFO: [ZephyrRTOS] .config file could not be read [/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/demo/Debug/.config (No such file or directory)]
+19:12:57.260 INFO: [TadModel] DSF session ID 15 has started.
+19:13:02.686 INFO: [TadModel] DSF session ID 15 has ended.

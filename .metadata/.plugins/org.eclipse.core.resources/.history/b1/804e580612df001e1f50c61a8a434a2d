@@ -1,0 +1,10 @@
+/usr/local/mcuxpressoide-11.9.0_2144/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.9.0.202307121226/tools/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7e-m+fp/softfp/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	8	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/empty-mbed-os/mbed-os/drivers/include/drivers/DigitalOut.h:73:5:mbed::DigitalOut::DigitalOut(PinName, int)	24	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/empty-mbed-os/mbed-os/drivers/include/drivers/DigitalOut.h:84:10:void mbed::DigitalOut::write(int)	16	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/empty-mbed-os/mbed-os/drivers/include/drivers/DigitalOut.h:96:9:int mbed::DigitalOut::read()	16	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/empty-mbed-os/mbed-os/drivers/include/drivers/DigitalOut.h:122:17:mbed::DigitalOut& mbed::DigitalOut::operator=(int)	16	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/empty-mbed-os/mbed-os/drivers/include/drivers/DigitalOut.h:143:5:mbed::DigitalOut::operator int()	16	static
+/poli/home/vyuka/apps/git/apps-workspace.mcu-11.9.0/empty-mbed-os/mbed-os/platform/include/platform/mbed_wait_api.h:132:13:void _wait_us_inline(unsigned int)	32	static
+../main-empty.cpp:13:5:int main()	8	static
+../main-empty.cpp:24:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../main-empty.cpp:24:1:cpp)	8	static

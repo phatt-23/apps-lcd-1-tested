@@ -1,0 +1,3 @@
+../mbed-os/symbols.c:1:5:_getpid	8	static
+../mbed-os/symbols.c:2:5:_kill	8	static
+../mbed-os/symbols.c:3:5:__aeabi_atexit	8	static
