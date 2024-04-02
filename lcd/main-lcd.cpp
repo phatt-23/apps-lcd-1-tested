@@ -1,21 +1,10 @@
-// **************************************************************************
-//
-//               Demo program for APPS labs
-//
-// Subject:      Computer Architectures and Parallel systems
-// Author:       Petr Olivka, petr.olivka@vsb.cz, 02/2022
-// Organization: Department of Computer Science, FEECS,
-//               VSB-Technical University of Ostrava, CZ
-//
-// File:         Main program for LCD module
-//
-// **************************************************************************
+
+#include <stdio.h>
+#include <stdlib.h>
 
 #include "mbed.h"
 #include "lcd_lib.h"
-
-// two dimensional array with fixed size font
-extern uint8_t g_font8x8[256][8];
+#include "graph_class.hpp"
 
 DigitalOut g_led_PTA1( PTA1, 0 );
 DigitalOut g_led_PTA2( PTA2, 0 );
@@ -25,26 +14,31 @@ DigitalIn g_but_PTC10( PTC10 );
 DigitalIn g_but_PTC11( PTC11 );
 DigitalIn g_but_PTC12( PTC12 );
 
-int main()
-{
-	lcd_init();				// LCD initialization
 
-	uint16_t l_color_red = 0xF800;
-	uint16_t l_color_green = 0x07E0;
-	uint16_t l_color_blue = 0x001F;
-	uint16_t l_color_white = 0xFFFF;
+// two dimensional array with fixed size font
+int main() {
+    lcd_init();  // LCD initialization
 
-	// simple animation display four color square using LCD_put_pixel function
-	int32_t l_limit = 200;
+    Circle circle({50, 50}, 30, {255, 255, 255}, {255, 0, 0});
+    circle.draw();
 
-	for ( int32_t ofs = 0; ofs < 20; ofs++ ) // square offset in x and y axis
-		for ( int32_t i = 0; i < l_limit; i++ )
-		{
-			lcd_put_pixel( ofs + i,       ofs + 0,       l_color_red );
-			lcd_put_pixel( ofs + 0,       ofs + i,       l_color_green );
-			lcd_put_pixel( ofs + i,       ofs + l_limit, l_color_blue );
-			lcd_put_pixel( ofs + l_limit, ofs + i,       l_color_white );
-		}
+    Line line1({50, 50}, {100, 100}, {0, 255, 0}, {0, 0, 0});
+    line1.draw();
 
+    Line line2({100, 110}, {50, 60}, {255, 0, 0}, {0, 0, 0});
+    line2.draw();
+
+    Line line3({50, 70}, {50, 170}, {0, 0, 255}, {0, 0, 0});
+    line3.draw();
+
+    Line line4({60, 170}, {60, 70}, {180, 190, 254}, {0, 0, 0});
+    line4.draw();
+
+    circle.hide();
+
+    Character character({170, 170}, 'a', {180, 190, 254}, {0, 0, 0});
+    character.draw(true);
+
+	while(1) {};
 	return 0;
 }

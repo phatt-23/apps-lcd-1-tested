@@ -1,0 +1,20 @@
+/usr/local/mcuxpressoide-11.9.0_2144/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.9.0.202307121226/tools/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7e-m+fp/softfp/bits/gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	8	static
+/home/phatt/University/apps/lcd-1-prep/apps-workspace.mcu/lcd/mbed-os/drivers/include/drivers/DigitalIn.h:67:5:mbed::DigitalIn::DigitalIn(PinName)	16	static
+/home/phatt/University/apps/lcd-1-prep/apps-workspace.mcu/lcd/mbed-os/drivers/include/drivers/DigitalIn.h:86:5:mbed::DigitalIn::~DigitalIn()	16	static
+/home/phatt/University/apps/lcd-1-prep/apps-workspace.mcu/lcd/mbed-os/drivers/include/drivers/DigitalOut.h:73:5:mbed::DigitalOut::DigitalOut(PinName, int)	24	static
+../graph_class.hpp:20:5:GraphElement::GraphElement(RGB, RGB)	16	static
+../graph_class.hpp:23:10:void GraphElement::drawPixel(int32_t, int32_t)	24	static
+../graph_class.hpp:29:18:virtual void GraphElement::hide()	16	static
+../graph_class.hpp:37:10:void GraphElement::swap_fg_bg_color()	16	static
+../graph_class.hpp:44:14:uint16_t GraphElement::convert_RGB888_to_RGB565(RGB)	16	static
+../graph_class.hpp:79:5:Circle::Circle(Point2D, int32_t, RGB, RGB)	24	static
+../graph_class.hpp:82:10:void Circle::draw_plot(int, int, int, int)	24	static
+../graph_class.hpp:93:10:virtual void Circle::draw()	40	static
+../graph_class.hpp:117:5:Character::Character(Point2D, char, RGB, RGB)	24	static
+../graph_class.hpp:119:10:virtual void Character::draw()	24	static
+../graph_class.hpp:129:10:void Character::draw(bool)	24	static
+../graph_class.hpp:147:5:Line::Line(Point2D, Point2D, RGB, RGB)	24	static
+../graph_class.hpp:150:10:virtual void Line::draw()	72	static
+../main-lcd.cpp:19:5:int main()	312	static
+../main-lcd.cpp:44:1:void __static_initialization_and_destruction_0(int, int)	16	static
+../main-lcd.cpp:44:1:cpp)	8	static
